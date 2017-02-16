@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic&subset=latin,cyrillic);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#content:before,
+#content:after {
+  content:"";
+  display:table;
+
+}
+#content:after {
+  clear:both;
+
+}
+#content {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+/* СТИЛИ ДЛЯ СТРАНИЦЫ Contact.html*/
+ body {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper-header {
+	width: 1170px;
+	height: 350px;
+	margin: 0 auto;
+	background-color: transparent;
+}
+
+.header {
+	width: 100%;
+	height: 350px;
+	background-image: url(images/wrapper-header.jpg);
+	border-bottom: 2px solid;
+	overflow: hidden;
+}
+
+.header-logo_display {
+    display: inline-block;
+}
+
+.header-nav__contact-html {
+    font-size: 20px;
+    word-spacing: 10px;
+    font-weight: 500;
+    float: right;
+    padding-top: 15px;
+}
+/* Блок с основной информацией Main*/
+.main-contact {
+	width: 1170px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* БЛОК text. С ЭЛЕМЕНТАМИ Заголовков hgroup*/
+.main-contact__hgroup {
+	padding-top: 25px;
+}
+
+.main-contact__hgroup-h2 {
+	font-size: 25px;
+    font-family: cursive;
+    font-style: oblique;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.main-contact__hgroup-h3 {
+	font-size: 20px;
+    font-style: oblique;
+    font-family: cursive;
+    padding-bottom: 25px;
+}
+
+.main-contact__hgroup-h3_text-overline {
+	text-decoration: overline;
+}
+
+/* БЛОК form*/
+.main-contact__section-form {
+	width: 450px;
+	height: 535px;
+	display: inline-block;
+	float: left;
+}
+
+.main-form__h2 {
+	padding-bottom: 15px;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: cursive;
+    text-decoration: overline;
+}
+
+.main-form__enter {
+	border-right: 2px solid #e5e5e5;
+    padding-right: 20px;
+}
+
+.main-form_input {
+	height: 20px;
+    width: 100%;
+    margin-bottom: 17px;
+    border-radius: 5px;
+}
+
+.main-form_input_submit {
+	margin-top: 10px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: dodgerblue;
+    border-width: medium;
+    font-size: 20px;
+    font-style: italic;
+    font-family: initial;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.main-form_input_text{
+	width: 50%;
+    margin-bottom: 5px;
+}
+
+.main-form_input_textarea {
+	height: 200px;
+	resize: none;
+}
+/*БЛОК addres*/
+.main-contact__section-addres {
+	 display: inline-block;
+	 margin-left: 50px;
+}
+
+.main-contact__list-ul {
+	font-size: 20px;
+    font-style: oblique;
+    font-family: cursive;
+    padding-bottom: 55px;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.main-contact__a {
+	padding-left: 5px;
+	color: black;
+}
+
+.main-contact__a:hover {
+	color: blue;
+}
+
+.main-contact__img-container {
+	width: 100%;
+	height: 281px;
+	display: block;
+	border-radius: 50px;
+}
+
+.main-contact__img-support {
+	background-image: url(images/contact-img_support.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 2px solid dodgerblue;
+	transition-property: all;
+	transition-delay: 100ms;
+	transition-timing-function: ease-in;
+	transition-duration: 2s;
+}
+
+.main-contact__img-support:hover {
+	transform: rotate(5deg);
+}
+
+/*БЛОК с картой. Maps*/
+.section-maps {
+	display: block;
+	border-top: 2px solid darkgrey;
+}
+
+.section-maps__maps {
+	width: 100%;
+	height: 374px;
+}

@@ -1,0 +1,800 @@
+@import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic&subset=latin,cyrillic);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#content:before,
+#content:after {
+  content:"";
+  display:table;
+
+}
+#content:after {
+  clear:both;
+
+}
+#content {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+/* !!!!!!!!!!!!!!!! СТИЛИ САЙТА !!!!!!!!!!!*/
+/*Стили для страницы Index.html*/
+
+/* Медиа запросы 
+@media screen and (max-width: 640px) {
+	body, html {
+	min-height: 960px;
+	background-size: 100%;
+	}
+}	.main-gallery {
+	width: 100%;
+	padding-bottom: 10px;
+}	.main-menu {
+	width: 100%;
+}	.main-discription__container-airpods {
+	width: 60%;
+}
+
+ Медия запросы */
+body {
+	width: 100%;
+	position: relative;
+}
+.header {
+	background-color: #000000;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid white;
+}
+
+/*Навигация сайти на странице Index.html*/
+.header-logo__img {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.header-nav  {
+	display: inline-block;
+	padding-right: 55px;
+	font-size: 20px;
+	word-spacing: 10px;
+	font-weight: 500;
+	float: right;
+	padding-top: 20px;
+}
+
+.header-nav__list-li {
+	display: inline-block;
+}
+
+.header-nav__list_color {
+	text-decoration: unset;
+	color: white;
+}
+/* ВЫПАДАЮЩЕЕ МЕНЮ СОЦИАЛЬНЫХ ИКОНОК*/
+.nav-sociate__list {
+	width: 28px;
+	height: 56px;
+	position: absolute;
+	display: inline-block;
+	right: 10px;
+	top: -60px;
+	transition: top 2s ease-out 100ms;
+}
+
+.nav-sociate__list:hover {
+	top: 0px;
+}
+
+.li__img {
+	width: 28px;
+	height: 28px;
+	padding-bottom: 2px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.strelka {
+	color: white;
+	text-align: center;
+}
+
+.li__img_vk {
+	background-image: url(images/sociate/vk.png);
+}
+
+.li__img_odn {
+	background-image: url(images/sociate/odn.png);
+}
+
+/*Стили для галереи на странице index.html*/
+.main-gallery {
+	width: 100%;
+	height: 640px;
+	border-bottom: 2px solid #9A9A9A;
+	position: relative;
+	background-color: #FAFAFA;	
+}
+
+.carousel-inner_height {
+	height: 640px;
+}
+.main-gallery__img {
+	height: 640px;
+	display: block;
+	background-image: url(images/gallery_img-iphone.jpg);
+	background-repeat: no-repeat;
+	background-position-x: 90%;
+	background-position-y: 30%;
+}
+
+/* Блок -menu, на странице index*/
+.main-menu {
+	height: 105px;
+	max-width: 980px;
+    margin: 20px auto 40px;
+    position: relative;
+    border-bottom: 1px solid #979797;
+}
+
+.main-menu__discription-laptop {
+	float: left;
+}
+
+.main-menu__discription-phone {
+	float: right;
+}
+
+/* Секция с блоком discription-laptop */
+.main-menu__box-laptop {
+	width: 125px;
+    display: inline-block;
+    height: 100px;
+    padding-right: 25px;
+}
+
+.main-menu__img-laptop {
+	height: 80px;
+    width: 125px;
+}
+
+.main-menu__p-laptop {
+	text-align: center;
+	font-size: 14px;
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    line-height: 1.536;
+}
+
+.main-menu__a-laptop {
+	text-decoration: unset;
+}
+
+/* Секция с блоком discription-phone */
+.main-menu__box-phone {
+	width: 75px;
+    display: inline-block;
+    height: 100px;
+}
+
+.main-menu__box-phone_padding-left {
+	padding-left: 10px;
+}
+
+.main-menu__img-phone {
+	height: 80px;
+    width: 75px;
+}
+
+.main-menu__p-phone	{
+	text-align: center;
+	font-size: 14px;
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    line-height: 1.536;
+}
+
+/* Блок -menu, на странице index*/
+.main-discription {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.main-discription__h1 {
+	font-size: 30px;
+    background-color: white;
+    font-style: italic;
+    font-family: monospace;
+    text-align: center;
+}
+
+.main-discription__div {
+	width: 387px;
+	display: inline-block;
+}
+
+.main-discription__container {
+	width: 100%;
+	height: 265px;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain; 
+	border-right: 1px solid black;
+}
+
+.main-discription__h2 {
+	margin-bottom: 5px;
+    font-size: 20px;
+    word-spacing: 3px;
+    font-weight: 400;
+    color: #333333;
+    font-style: italic;
+    font-family: fantasy;
+    text-decoration: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.main-discription__h2-tv_relative {
+	position: relative;
+	top: 32px;
+	left: 70px;
+}
+
+.main-discription__h2-airpods_relative {
+	position: relative;
+    top: 52px;
+    left: 40px;
+}
+
+.main-discription__h2-watch_relative {
+	position: relative;
+	top: 55px;
+	left: 150px;
+}	
+
+.main-discription__container-tv {
+	background-image: url(images/news-tv.jpg);
+}
+
+.main-discription__container-tv:hover {
+	box-shadow: inset 0px 0px 2px;
+}
+
+.main-discription__container-airpods {
+	background-image: url(images/news-airpods.jpg);
+	background-position-y: 47px;
+}
+
+.main-discription__container-airpods:hover {
+	box-shadow: inset 0px 0px 2px;
+}
+
+.main-discription__container-watch {
+	background-image: url(images/news-watch2.jpg); 
+	background-position-x: -15px;
+	background-position-y: 6px;
+}
+
+.main-discription__container-watch:hover {
+	box-shadow: inset 0px 0px 2px;
+}
+
+/* Блок Video на странице index.html*/
+.main-video {
+	height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.main-video__mp4 {
+    width: 100%;
+    min-height: 760px;
+}
+
+/*Footer на странице Index.html*/
+.footer {
+	width: 100%;
+	display: block;
+	height: 150px;
+	background-color: #FAFAFA;
+}
+
+.footer-nav {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.footer-nav__list {
+	width: 105px;
+	height: 100%;
+	display: block;
+	line-height: 20px;
+	float: left;
+	margin-right: 40px;
+	color: #949293;
+	font-size: 12px;
+}
+
+.footer-nav__list li > a {
+	text-decoration: unset;
+	color: #949293;
+}
+
+.footer-nav__list li > a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.footer-nav__h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding-top: 25px;
+	padding-left: 0;
+	color: #949293;
+	text-decoration: unset;
+}
+
+.footer-nav__inf {
+	width: 350px;
+	height: 100%;
+	display: inline-block;
+	line-height: 20px;
+	color: #949293;
+	font-size: 12px;
+	margin-right: 40px;
+}
+/* ИКОНКИ СОЦ-СЕТЕЙ */
+.footer-sociate{
+	width: 109px;
+	height: 150px;
+	display: inline-block;
+	color: #949293;
+	position: relative;
+	bottom: 6px;
+}
+
+.footer-img {
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	background-size: contain;
+	padding-right: 2px;
+}
+
+.footer-box {
+	width: 77px;
+	padding: 0 16px 0 16px;
+}
+
+.footer-img__vk {
+	background-image: url(images/sociate/vk.png);
+}
+
+.footer-img__odn {
+	background-image: url(images/sociate/odn.png);
+}
+
+.footer-img__facebook {
+	background-image: url(images/sociate/facebook.png);
+}
+
+.footer-img__google {
+	background-image: url(images/sociate/google.png);
+}
+
+.footer-copyright {
+	color: white;
+	font-size: 16px;
+	height: 20px;
+	text-align: center;
+	background-color: black;
+}
+
+
+/*Стили для Каталога товаров на странице Catalog.html*/
+.main-catalog {
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.catalog-article-contact{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 5px;	
+}
+
+.main-catalog__h2 {
+	padding-left: 5px;
+	padding-top: 20px;
+	margin-bottom: 25px;
+	font-size: 23px;
+	word-spacing: 3px;
+	font-weight: 400;
+	color: #333333;
+	text-decoration: underline;
+}
+
+/*Описание товара MacBook*/
+.main-catalog__discription {
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.main-catalog__img-macbook {
+	float: left;
+	margin-right: 10px;
+}
+
+.main-catalog__img-imac {
+	float: left;
+	margin-right: 10px;
+}
+
+.main-catalog__img-imac img {
+	width: 220px;
+	height: 160px;
+}
+
+.main-catalog__specification {
+	width: 435px;
+}
+
+/*Стили для <article class="content-article__catalog-tovarov1-3">*/
+.main-content__catalog-tovarov1-3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Заголовок товара*/
+.main-content__h2 {
+	font-size: 40px;
+	word-spacing: 5px;
+	font-weight: 400;
+	color: #333333;
+	text-decoration: unset;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/*ГОРИЗОНТАЛЬНОЕ МЕНЮ НА СТРАНИЦЕ CATALOG-TOVARA1-3.HTML*/
+.menu {
+	max-width: 980px;
+	height: 60px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 1px solid #979797;
+}
+
+.menu__title {
+	position: relative;
+	display: inline-block;
+	font-size: 25px;
+	padding-top: 19px;
+}
+
+.menu__title a {
+	text-decoration: unset;
+	color: #979797;
+}
+
+.menu__level {
+	position: relative;
+	float: right;
+	list-style-type: none;
+	font-size: 18px;
+	padding-top: 19px;
+}
+
+.menu__tray li {
+	display: inline;
+	word-spacing: 15px;
+}
+
+.menu__tray a {
+	color: #979797;
+	text-decoration: unset;
+}
+
+.menu__buy {
+	float: right;
+	margin-left: 15px;
+}
+
+.menu__buy input {
+	background-color: #3396E4;
+    font-size: 15px;
+    border: 1px solid #07c;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 15px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(28,115,184,0.64);
+    white-space: nowrap;
+    font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+/* СТИЛИ ДЛЯ ЗАГОЛОВКА h2 И ССЫЛКИ */
+.title__h2 {
+	margin-top: 20px;
+}
+
+.title__a {
+	border-top: 1px solid black;
+}
+
+/* Картинки catalog-tovar1.html*/
+.main-content__MacBook {
+	margin-bottom: 30px;
+}
+
+.main-content__img-macbookAir {
+	background: url(images/main-macbook_air.jpg) no-repeat center center;
+	background-size: contain;
+	height: 425px;
+	margin: 0px 200px 0px 200px;
+}
+
+/* СЕКЦИЯ ДЛЯ КЛАССА main-content__box-specification --> specification */
+.wrapper-box_border_top {
+	height: 425px;
+	margin: 10px 0 20px 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.wrapper-box_border_top_disabled {
+	border-top: 0;
+}
+
+.wrapper-box_height {
+	height: 200px;
+}
+
+.wrapper-box_height_xxl {
+	border-top: 0;
+	height: 585px;
+}
+
+.main-content__img-macbookAir_specification {
+	background: url(images/main-macbook_air-specification.jpg) no-repeat;
+	background-size: contain;
+	width: 835px;
+	float: left;
+	margin: 0;
+}
+
+.main-content__img-macbookAir_discription {
+	background: url(images/main-macbook_air-discription.jpg) no-repeat;
+	width: 690px;
+	margin: 0;
+	background-position-y: -150px;
+	background-position-x: -50px;
+	float: right;
+}
+
+.main-content__img-macbookAir_discription1 {
+	height: 200px;
+	background: url(images/main-macbook_air-discription_1.jpg) no-repeat;
+	margin: 0;
+	width: 650px;
+	float: left;
+}
+
+.main-content__img-macbookAir_discription2 {
+	background: url(images/main-macbook_air-discription_2.jpg) no-repeat center center;
+	background-size: contain;
+}
+
+/* Картинки catalog-tovar2.html*/
+.main-content__img-macbookPro {
+	background: url(images/main-macbook_pro.jpg) no-repeat center center;
+	background-size: contain;
+	height: 446px;
+	border: 2px solid white;
+	margin: 0px 200px 0px 200px;
+}
+
+.main-content__img-macbookPro_specification {
+	background: url(images/main-macbook_pro-specification.jpg) no-repeat;
+	background-size: contain;
+	width: 690px;
+	float: left;
+	margin: 0;
+}
+
+.main-content__img-macbookPro_discription {
+	background: url(images/main-macbook_pro-discription.jpg) no-repeat;
+	background-size: contain;
+	margin: 0;
+	float: right;
+	width: 795px;
+}
+
+.main-content__img-macbookPro_discription1 {
+	background: url(images/main-macbook_pro-discription_1.jpg) no-repeat;
+	background-size: contain;
+	width: 700px;
+	height: 200px;
+	float: left;
+	margin: 0;
+}
+
+.main-content__img-macbookPro_discription2 {
+	background: url(images/main-macbook_pro-discription_2.jpg) no-repeat center center;
+	background-size: contain;
+}
+
+/* Картинки catalog-tovar3.html*/
+.main-content__img-iMac {
+	background: url(images/main-imac.jpg) no-repeat center center;
+	background-size: contain;
+	height: 446px;
+	margin: 0px 200px 0px 200px;
+}
+
+.main-content__img-iMac_specification {
+	background: url(images/main-imac-specification.jpg) no-repeat;
+	background-size: contain;
+	margin: 0 0 0 250px;
+	width: 400px;
+	float: left;
+}
+
+.main-content__img-iMac_discription {
+	background: url(images/main-imac-discription.jpg) no-repeat;
+	background-size: contain;
+	margin: 0;
+	width: 590px;
+	float: right;
+}
+
+.main-content__img-iMac_discription1 {
+	background: url(images/main-imac-discription_1.jpg) no-repeat;
+	background-size: contain;
+	margin: 0;
+	float: left;
+	width: 700px;
+}
+
+.main-content__img-iMac_discription2 {
+	background: url(images/main-imac-discription_2.jpg) no-repeat center center;
+	background-size: contain;
+}
+
+/*Редактируем контент на странице catalog-tovara1-3.html*/
+.main-content__small-text {
+	color: #707070;
+	font-size: 20px;
+	font-style: italic;
+	line-height: 25px;
+	text-align: center;
+	display: inline-block;
+}
+
+/*Стили для раздела ХАРАКТЕРИСТИКА*/
+.main-content__list {
+	margin: 20px auto 20px;
+    display: inline-block;
+}
+
+.list_font_size_s {
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.main-content__list-specification {
+	width: 510px;
+	position: relative;
+	top: 105px;
+	text-align: -moz-left;
+	font-size: 24px;
+	line-height: 35px;
+	margin: 0;
+}
+
+.main-content__list-description {
+	width: 690px;
+	position: relative;
+	display: inline-block;
+	text-align: -moz-right;
+	margin: 0;
+}
+
+.list-description_width {
+	width: 640px;
+}
+
+.main-content__height-text {
+	color: #484343;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;	
+}
+
+.main-content__height-p {
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.height-p_margin_disabled {
+	margin: 0;
+	width: 650px;
+	text-align: -moz-left;
+	position: relative;
+	top: 70px;
+}
+
+.height-text__ul {
+	color: black;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	text-align: left;
+	font-style: italic;
+	list-style-type: inherit;
+}
+
+/* ОЧИСТА ПОТОКА CLEARFIX:AFTER  */
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
