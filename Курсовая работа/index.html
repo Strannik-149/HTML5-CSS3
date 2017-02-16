@@ -4,6 +4,13 @@
 	<meta charset="utf-8">
 	<title>Курс HTML5</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style/style.css">
+        <!-- Example assets -->
+        <link rel="stylesheet" href="style/jcarousel.transitions.css">
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jcarousel.transitions.js"></script>
 </head>
 <body>
 <header class="header">
@@ -30,11 +37,25 @@
 </header>
 <main class="main">
 	<section class="main-gallery">
+		<div class="wrapper">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                    	<li style="background: url('images/3.jpg')no-repeat;background-position-y: -230px;background-position-x: -160px;"></li>
+                        <li style="background: url('images/1.jpg')no-repeat;background-position-y: -75px;background-position-x: 195px;">                
+                        </li>
+                        <li style="background: url('images/2.jpg')no-repeat;"></li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            </div>
+        </div>
 		<!--<div class="main-gallery__img">-->
 			<!-- ЗДЕСЬ ГАЛЕРЕЯ-->
-			<a class="main-gallery__a" href="#">
+			<!--<a class="main-gallery__a" href="#">
 				<img class="main-gallery__img">
-			</a>
+			</a>-->
 		<!--</div>-->
 	</section>
 	<menu class="main-menu">

@@ -435,9 +435,10 @@ body {
 .footer-copyright {
 	color: white;
 	font-size: 16px;
-	height: 20px;
+	height: 40px;
 	text-align: center;
 	background-color: black;
+	padding-top: 20px;
 }
 
 
